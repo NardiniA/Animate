@@ -1,0 +1,209 @@
+/*
+    Custom Animations
+
+    Fade in.
+*/
+
+@keyframes fadeIn {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+/*
+    Fade Out
+*/
+
+@keyframes fadeOut {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 0%;
+    }
+}
+
+.fadeOut {
+    animation-name: fadeOut;
+    animation-duration: 2s;
+}
+
+/*
+    Fade In Up
+
+    Change translate3d (where it says '40px', to change distance of animation)
+
+    translate3d(tx, ty, tz) == x = horizontal (left = Positive, right = negative), 
+    y = vertical (down = Positive, up = Negative), z = back and forth (forth = Positive, 
+    back = negative)
+*/
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+}
+
+/*
+    Fade In Down
+
+    Change translate3d (where it says '-40px', to change distance of animation)
+*/
+
+@keyframes fadeInDown {
+    from {
+        transform: translate3d(0,-40px,0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+}
+
+/*
+    Fade Out Up
+
+    Change translate3d (where it says '40px', to change distance of animation)
+*/
+
+@keyframes fadeOutUp {
+    from {
+        transform: translate3d(0,40px,0);
+        opacity: 1;
+    }
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 0;
+    }
+}
+
+.fadeOutUp {
+    animation-name: fadeOutUp;
+    animation-duration: 1s;
+}
+
+/*
+    Fade Out Down
+
+    Change translate3d (where it says '-40px', to change distance of animation)
+*/
+
+@keyframes fadeOutDown {
+    from {
+        transform: translate3d(0,-40px,0);
+        opacity: 1;
+    }
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 0;
+    }
+}
+
+.fadeOutDown {
+    animation-name: fadeOutDown;
+    animation-duration: 1s;
+}
+
+/*
+    Fade In Left
+*/
+
+@keyframes fadeInLeft {
+    from {
+        transform: translate3d(-40px,0,0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+.fadeInLeft {
+    animation-name: fadeInLeft;
+    animation-duration: 1s;
+}
+
+/*
+    Fade In Right
+*/
+
+@keyframes fadeInRight {
+    from {
+        transform: translate3d(40px,0,0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+.fadeInRight {
+    animation-name: fadeInRight;
+    animation-duration: 1s;
+}
+
+/*
+    Fade Out Right
+*/
+
+@keyframes fadeOutRight {
+    from {
+        transform: translate3d(40px,0,0);
+        opacity: 1;
+    }
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 0;
+    }
+}
+
+.fadeOutRight {
+    animation-name: fadeOutRight;
+    animation-duration: 1s;
+}
+
+/*
+    Fade Out Left
+*/
+
+@keyframes fadeOutLeft {
+    from {
+        transform: translate3d(-40px,0,0);
+        opacity: 1;
+    }
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 0;
+    }
+}
+
+.fadeOutLeft {
+    animation-name: fadeOutLeft;
+    animation-duration: 1s;
+}
