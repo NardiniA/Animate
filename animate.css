@@ -207,3 +207,298 @@
     animation-name: fadeOutLeft;
     animation-duration: 1s;
 }
+
+/*
+    Flip X
+*/
+
+@keyframes flipx {
+    from {
+        transform: rotateX(90deg);
+    }
+
+    to {
+        transform: rotateX(0deg);
+    }
+}
+
+.flipX {
+    animation-name: flipx;
+    animation-duration: 2s;
+}
+
+/*
+    Flip Y
+
+    Will Flip from right to left. (Will do so for entire width of parent)
+*/
+
+@keyframes flipy {
+    from {
+        transform: rotateY(180deg);
+    }
+
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+.flipY {
+    animation-name: flipy;
+    animation-duration: 2s;
+}
+
+/*
+    FlipX and Fade In
+*/
+
+@keyframes flipxAndFadeIn {
+    from {
+        transform: rotateX(90deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+}
+
+.flipXAndFadeIn {
+    animation-name: flipxAndFadeIn;
+    animation-duration: 2s;
+}
+
+/*
+    FlipX and Fade Out
+*/
+
+@keyframes flipxAndFadeOut {
+    from {
+        transform: rotateX(90deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: rotateX(0deg);
+        opacity: 0;
+    }
+}
+
+.flipXAndFadeOut {
+    animation-name: flipxAndFadeOut;
+    animation-duration: 2s;
+}
+
+/*
+    FlipY and Fade In
+*/
+
+@keyframes flipYAndFadeIn {
+    from {
+        transform: rotateY(180deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+.flipYAndFadeIn {
+    animation-name: flipYAndFadeIn;
+    animation-duration: 2s;
+}
+
+/*
+    FlipY and Fade Out
+*/
+
+@keyframes flipYAndFadeOut {
+    from {
+        transform: rotateY(180deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: rotateY(0deg);
+        opacity: 0;
+    }
+}
+
+.flipYAndFadeOut {
+    animation-name: flipYAndFadeOut;
+    animation-duration: 2s;
+}
+
+/* 
+    HeartBeat
+*/
+
+@keyframes heartBeat {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.heartBeat {
+    animation-name: heartBeat;
+    animation-duration: 1s;
+}
+
+/*
+    Slide In Up
+*/
+
+@keyframes slideInUp {
+    from {
+        transform: translate3d(0,40px,0);
+    }
+    to {
+        transform: translate3d(0,0,0);
+    }
+}
+
+.slideInUp {
+    animation-name: slideInUp;
+    animation-duration: 2s;
+}
+
+/*
+    Slide In Down
+*/
+
+@keyframes slideInDown {
+    from {
+        transform: translate3d(0,-40px,0);
+    }
+    to {
+        transform: translate3d(0,0,0);
+    }
+}
+
+.slideInDown {
+    animation-name: slideInDown;
+    animation-duration: 2s;
+}
+
+/*
+    Slide In Right
+*/
+
+@keyframes slideInRight {
+    from {
+        transform: translate3d(-40px,0,0);
+    }
+    to {
+        transform: translate3d(0,0,0);
+    }
+}
+
+.slideInRight {
+    animation-name: slideInRight;
+    animation-duration: 2s;
+}
+
+/*
+    Slide In Left
+*/
+
+@keyframes slideInLeft {
+    from {
+        transform: translate3d(40px,0,0);
+    }
+    to {
+        transform: translate3d(0,0,0);
+    }
+}
+
+.slideInLeft {
+    animation-name: slideInLeft;
+    animation-duration: 2s;
+}
+
+/*
+    Slide Out Down
+*/
+
+@keyframes slideOutDown {
+    from {
+        transform: translate3d(0,0,0);
+    }
+    to {
+        transform: translate3d(0,40px,0);
+    }
+}
+
+.slideOutDown {
+    animation-name: slideOutDown;
+    animation-duration: 2s;
+}
+
+/*
+    Slide Out Up
+*/
+
+@keyframes slideOutUp {
+    from {
+        transform: translate3d(0,0,0);
+    }
+    to {
+        transform: translate3d(0,-40px,0);
+    }
+}
+
+.slideOutUp {
+    animation-name: slideOutUp;
+    animation-duration: 2s;
+}
+
+/*
+    Slide Out Left
+*/
+
+@keyframes slideOutLeft {
+    from {
+        transform: translate3d(0,0,0);
+    }
+    to {
+        transform: translate3d(-40px,0,0);
+    }
+}
+
+.slideOutLeft {
+    animation-name: slideOutLeft;
+    animation-duration: 2s;
+}
+
+/*
+    Slide Out Right
+*/
+
+@keyframes slideOutRight {
+    from {
+        transform: translate3d(0,0,0);
+    }
+    to {
+        transform: translate3d(40px,0,0);
+    }
+}
+
+.slideOutRight {
+    animation-name: slideOutRight;
+    animation-duration: 2s;
+}
