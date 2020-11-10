@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <title>Animation test</title>
+        <link rel = "stylesheet" href = "index.css" />
         <link rel = "stylesheet" href = "animate.css" />
     </head>
     <body>
@@ -74,6 +75,127 @@
         </div>
         <div class="slideOutLeft">
             <h1>Slide Out Left</h1>
-        </div>-->
+        </div>
+
+
+        <main style="width: 100%; height: 100vh; margin: 0; position: relative; background-color: red;">
+            <h1 id="target" style="position: absolute; top: 40%; left:40%; font-size: 64px">Animate</h1>
+        </main>
+        <button data-animation="heartBeat">HeartBeat</button>
+        <button data-animation="fadeIn">Fade In</button>-->
+
+        <main>
+            <div class="display-area">
+                <h1 id="target">Animate</h1>
+            </div>
+            <div class="btns">
+                <h2>All Animations:</h2>
+
+                <h3>Fade In/Out</h3>
+                <ul>
+                    <li>
+                        <button data-animation="fadeIn">Fade In</button>
+                    </li>
+                    <li>
+                        <button data-animation="fadeOut">Fade Out</button>
+                    </li>
+                    <li>
+                        <button data-animation="fadeInUp">Fade In Up</button>
+                    </li>
+                    <li>
+                        <button data-animation="fadeInDown">Fade In Down</button>
+                    </li>
+                    <li>
+                        <button data-animation="fadeInLeft">Fade In Left</button>
+                    </li>
+                    <li>
+                        <button data-animation="fadeInRight">Fade In Right</button>
+                    </li>
+                    <li>
+                        <button data-animation="fadeOutLeft">Fade Out Left</button>
+                    </li>
+                    <li>
+                        <button data-animation="fadeOutRight">Fade Out Right</button>
+                    </li>
+                </ul>
+
+                <h3>Flip Animations</h3>
+                <ul>
+                    <li>
+                        <button data-animation="flipX">Flip in X</button>
+                    </li>
+                    <li>
+                        <button data-animation="flipY">Flip in Y</button>
+                    </li>
+                    <li>
+                        <button data-animation="flipXAndFadeIn">Flip & Fade in X</button>
+                    </li>
+                    <li>
+                        <button data-animation="flipYAndFadeIn">Flip & Fade in Y</button>
+                    </li>
+                </ul>
+
+                <h3>Sliding Animations</h3>
+                <ul>
+                    <li>
+                        <button data-animation="slideInUp">Slide In Up</button>
+                    </li>
+                    <li>
+                        <button data-animation="slideInDown">Slide In Down</button>
+                    </li>
+                    <li>
+                        <button data-animation="slideInLeft">Slide In Left</button>
+                    </li>
+                    <li>
+                        <button data-animation="slideInRight">Slide In Right</button>
+                    </li>
+                    <li>
+                        <button data-animation="slideOutUp">Slide Out Up</button>
+                    </li>
+                    <li>
+                        <button data-animation="slideOutDown">Slide Out Down</button>
+                    </li>
+                    <li>
+                        <button data-animation="slideOutLeft">Slide Out Left</button>
+                    </li>
+                    <li>
+                        <button data-animation="slideOutRight">Slide Out Right</button>
+                    </li>
+                </ul>
+
+                <h3>Special Animations</h3>
+                <ul>
+                    <li>
+                        <button data-animation="heartBeat">Heart Beat</button>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        
+
+        <script>
+            function animate(animation) {
+                let target = document.querySelector('#target');
+                target.classList.add(animation);
+                target.addEventListener('animationend', () => {
+                    target.classList.remove(animation);
+                });
+                target.addEventListener('webkitanimationend', () => {
+                    target.classList.remove(animation);
+                });
+            }
+
+            window.addEventListener('DOMContentLoaded', (event) => {
+                
+                let btns = document.querySelectorAll('button');
+
+                btns.forEach(button => {
+                    button.onclick = function() {
+                        animate(this.dataset.animation);
+                    }
+                });
+
+            });
+        </script>
     </body>
 </html>
