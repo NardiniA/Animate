@@ -30,3 +30,7 @@ List of Classes:
 Add these classes to an element or a parent element to start the animation.
 
 These animations only run once and they move 40px. Change the attributes to change duration, iteration or movement distance.
+
+##### Future Additions (Potential):
+May remove iteration and duration from animations and introduce seperate classes for more user control.
+
