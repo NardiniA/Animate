@@ -26,6 +26,8 @@ List of Classes:
 * slideOutDown
 * slideOutLeft
 * slideOutRight
+* scaleIn
+* scaleOut
 
 Add these classes to an element or a parent element to start the animation.
 
@@ -39,6 +41,8 @@ For greater developer control, you can add some of the following classes to adap
 
 The pre-set duration classes are as follows:
 
+* s-5 (0.5s)
+* s-75 (0.75s)
 * s1 (1s)
 * s1-25 (1.25s)
 * s1-5 (1.5s)
@@ -89,3 +93,12 @@ Alternatively, you can create your own using the following syntax:
 `.class {
     animation-iteration-count: (count) !important;
 }`
+
+#### Direction
+
+Animations can also play in different directions. They are as follows:
+
+* forwards (normal)
+* reverse
+* alternate
+* alternate-reverse
