@@ -78,10 +78,10 @@ button:focus, button:hover, button:active {
 }
 
 #target {
-    justify-content: center;
-    align-items: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 64px;
-    margin: auto;
-    width: 50%;
-    padding-top: 50vh;
 }
